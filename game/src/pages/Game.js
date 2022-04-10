@@ -6,7 +6,7 @@ import { useGame } from "../contexts/GameContext";
 
 function Game() {
   /* context imported to this page */
-  const { number1List, number2List, hello, index, tour, score } = useGame();
+  const { number1List, number2List, answerClick, index, tour, score } = useGame();
 
   const [boardNumber1, setBoardNumber1] = useState(number1List);
   const [boardNumber2, setBoardNumber2] = useState(number2List);
@@ -41,12 +41,12 @@ function Game() {
             {index < 9 ? (
               <div
                 className="divFirstText"
-                onClick={() => hello(correctResponse)}
+                onClick={() => answerClick(correctResponse)}
               >
                 {correctResponse}
               </div>
             ) : (
-              <Link to="/final" onClick={() => hello(correctResponse)}>
+              <Link to="/final" onClick={() => answerClick(correctResponse)}>
                 {correctResponse}
               </Link>
             )}
@@ -56,11 +56,11 @@ function Game() {
           <Answer />
           <div className="secondText">
             {index < 9 ? (
-              <div className="divSecondText" onClick={() => hello()}>
+              <div className="divSecondText" onClick={() => answerClick(wrongResponse)}>
                 {wrongResponse}
               </div>
             ) : (
-              <Link to="/final" onClick={() => hello(wrongResponse)}>
+              <Link to="/final" onClick={() => answerClick(wrongResponse)}>
                 {wrongResponse}
               </Link>
             )}
@@ -72,12 +72,12 @@ function Game() {
             {index < 9 ? (
               <div
                 className="divThirdText"
-                onClick={() => hello(secondWrongAnswer)}
+                onClick={() => answerClick(secondWrongAnswer)}
               >
                 {secondWrongAnswer}
               </div>
             ) : (
-              <Link to="/final" onClick={() => hello(secondWrongAnswer)}>
+              <Link to="/final" onClick={() => answerClick(secondWrongAnswer)}>
                 {secondWrongAnswer}
               </Link>
             )}

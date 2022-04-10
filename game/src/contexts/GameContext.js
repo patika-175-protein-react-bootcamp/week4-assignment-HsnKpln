@@ -7,6 +7,8 @@ const GameProvider = ({ children }) => {
   const [totalQuestion, setTotalQuestion] = useState(0);
   const [totalCorrectAnswer, setTotalCorrectAnswer] = useState(0);
   const [correctAnswer, setCorrectAnswer] = useState(0);
+  const [controlCorrectAnswer, setControlCorrectAnswer] = useState();
+  
   const [number1List, setNumber1List] = useState([]);
   const [number2List, setNumber2List] = useState([]);
 
@@ -47,9 +49,15 @@ const GameProvider = ({ children }) => {
   /* this function check the answer and fixes properties in the game page */
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
-  async function hello(k) {
-
+  
+  
+  
+  async function answerClick(k) {
+    let controlAnswerList = [];
+    controlAnswerList.push(k)
+    console.log("control", controlAnswerList)
     setIndex(index + 1);
+
 
     if (k === number1List[index] * number2List[index]) {
 
@@ -69,6 +77,8 @@ const GameProvider = ({ children }) => {
 
     }
     
+    setControlCorrectAnswer(controlAnswerList)
+    
   }
   return (
     <GameContext.Provider
@@ -78,13 +88,14 @@ const GameProvider = ({ children }) => {
         totalCorrectAnswer,
         number1List,
         number2List,
-        hello,
+        answerClick,
         index,
         tour,
         score,
         correctAnswer,
         restart,
         createNumbers,
+        controlCorrectAnswer
       }}
     >
       {children}
