@@ -1,0 +1,352 @@
+.App {
+  text-align: center;
+}
+/* home page starts */
+.main{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  width: 642px;
+  height: 109px;
+  
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 82px;
+  line-height: 109px;
+  color: #FF0000;
+}
+.subline{
+  width: 640px;
+  height: 10px;
+  background: #FF0000;  
+}
+.info{
+  width: 585px;
+  height: 85px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 85px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.startContainer a{
+  position: absolute;
+  top: 550px;
+  width: 447px;
+  height: 139px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+  text-decoration: none;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 85px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+/* game page start*/
+.board{
+  position: absolute;
+  width: 647.51px;
+  height: 643.45px;
+  margin-left: 70px;
+  
+}
+.boardText{
+  position: absolute;
+  width: 160px;
+  height: 110px;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 171px;
+  color: #FFFFFF;
+  top: 120px;
+  left: 80px;
+}
+.summarry{
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.summaryContainer{
+  display: flex;
+}
+.score{
+  width: 214px;
+  height: 64px;
+  margin-right: 33px;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  color: #FFFFFF;
+}
+.tour{
+  width: 159px;
+  height: 64px;
+  margin-right: 66px;
+  margin-left: 86px;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  color: #FFFFFF;
+}
+.question{
+  width: 310px;
+  height: 64px;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  color: #FFFFFF;
+}
+
+.firstAnswer{
+  position: relative;
+  top: 120px;
+  left: 860px;
+  display: flex;
+  width: 333px;
+}
+.secondAnswer{
+  position: relative;
+  top: 120px;
+  left: 1160px;
+  display: flex;
+  width: 333px;
+}
+.thirdAnswer{
+  position: relative;
+  top: 120px;
+  left: 930px;
+  display: flex;
+  width: 333px;
+}
+.firstText a{
+  position: relative;
+  left: -110px;
+  width: 134px;
+  height: 112px;
+  text-decoration: none;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120px;
+  color: #FFFFFF;
+}
+.divFirstText{
+  position: relative;
+  left: -110px;
+  width: 134px;
+  height: 112px;
+  text-decoration: none;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.secondText a{
+  position: relative;
+  left: -110px;
+  width: 134px;
+  height: 112px;
+  text-decoration: none;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120px;
+  color: #FFFFFF;
+}
+.divSecondText{
+  position: relative;
+  left: -110px;
+  width: 134px;
+  height: 112px;
+  text-decoration: none;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.thirdText a{
+  position: relative;
+  left: -110px;
+  width: 134px;
+  height: 112px;
+  text-decoration: none;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120px;
+  color: #FFFFFF;
+}
+.divThirdText{
+  position: relative;
+  left: -110px;
+  width: 134px;
+  height: 112px;
+  text-decoration: none;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+/*final page starts*/
+.finalBody{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.finalContainer{
+  display: flex;
+  justify-content: space-around;
+}
+.final{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.finalTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 423px;
+  height: 85px;
+  text-align: center;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 109px;
+  color: #FF0000;
+}
+.finalSubline{
+  width: 228px;
+  height: 6px;
+  background: #FF0000;
+}
+.finalPoint{
+  width: 423px;
+  height: 85px;
+  text-align: center;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 85px;
+  color: #FFFFFF;
+}
+.finalQuestion{
+  width: 423px;
+  height: 85px;
+  text-align: center;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 85px;
+  color: #FFFFFF;
+}
+.correctAnswer{
+  width: 423px;
+  height: 85px;
+  text-align: center;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 85px;
+  color: #FFFFFF;
+}
+.restartContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.restartContainer a{
+  position: absolute;
+  width: 203px;
+  height: 85px;
+  text-decoration: none;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 85px;
+  color: #FFFFFF;
+}
+.allQuestion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.questionTitle{
+  width: 324px;
+  height: 85px;
+  text-align: center;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 85px;
+  color: #FF0000;
+}
+.questionSubline{
+  width: 250px;
+  height: 6px;
+  background: #FF0000;
+}
+.questions{
+  width: 222px;
+  height: 49px;
+  text-align: center;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 69px;
+  color: #FFFFFF;
+}
