@@ -55,7 +55,9 @@ const GameProvider = ({ children }) => {
   async function answerClick(k) {
     let controlAnswerList = [];
     controlAnswerList.push(k)
+    setControlCorrectAnswer(controlAnswerList)
     console.log("control", controlAnswerList)
+    
     setIndex(index + 1);
 
 
@@ -77,7 +79,6 @@ const GameProvider = ({ children }) => {
 
     }
     
-    setControlCorrectAnswer(controlAnswerList)
     
   }
   return (
